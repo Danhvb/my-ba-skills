@@ -1,8 +1,18 @@
-
-# Ignore output files from Business Analysis
-business-analysis/output/
+# Ignore output folders
 **/output/
 .DS_Store
 
+# Ignore sensitive env files
+**/.env
+**/.env.local
+
 # Ignore repos folder
 repos/
+
+# Keep business-analysis folder structure but ignore all content
+# We allow .gitkeep files so the folders themselves can be pushed
+business-analysis/**
+!business-analysis/
+!business-analysis/**/
+!business-analysis/**/.gitkeep
+!business-analysis/README.md
