@@ -1,0 +1,8 @@
+
+# Ignore output files from Business Analysis
+business-analysis/output/
+**/output/
+.DS_Store
+
+# Ignore repos folder
+repos/
